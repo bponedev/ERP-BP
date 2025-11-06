@@ -1,0 +1,33 @@
+<!-- login.html
+     Página de login do ERP-BP (sem lógica JS - somente UI)
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Login</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp-login">
+  <!-- Caixa de login centralizada -->
+  <main class="login-box" role="main" aria-labelledby="login-title">
+    <img src="images/logo.png" alt="ERP-BP" class="login-logo" />
+    <h1 id="login-title">ERP-BP</h1>
+
+    <!-- Formulário (sem ação - integrar com backend posteriormente) -->
+    <form id="login-form" class="form">
+      <label for="user">Usuário</label>
+      <input id="user" name="user" type="text" required />
+
+      <label for="pass">Senha</label>
+      <input id="pass" name="pass" type="password" required />
+
+      <button class="erpbp-btn" type="submit">Entrar</button>
+
+      <p class="help">Esqueceu a senha? Contate o administrador.</p>
+    </form>
+  </main>
+</body>
+</html>
