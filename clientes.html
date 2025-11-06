@@ -1,0 +1,85 @@
+<!-- clientes.html
+     Página de listagem de clientes (apenas estrutura e estilo)
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Clientes</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp">
+  <header class="erpbp-header">
+    <div class="erpbp-header-left">
+      <img src="images/logo.png" alt="ERP-BP" class="erpbp-logo" />
+      <span class="erpbp-appname">ERP-BP</span>
+    </div>
+    <div class="erpbp-header-right">
+      <input id="erpbp-search" placeholder="Pesquisar clientes..." aria-label="Pesquisar clientes" />
+      <button class="erpbp-btn">Sair</button>
+    </div>
+  </header>
+
+  <div class="erpbp-layout">
+    <aside class="erpbp-sidebar" aria-label="Menu Principal">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="active"><a href="clientes.html">Clientes</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="settings.html">Configurações</a></li>
+      </ul>
+    </aside>
+
+    <main class="erpbp-content">
+      <h1>Clientes</h1>
+
+      <!-- Barra de ação: novo cliente / filtros -->
+      <div class="actions">
+        <button class="erpbp-btn">Novo Cliente</button>
+        <div class="filters">
+          <label>Filtrar:</label>
+          <select aria-label="Filtro">
+            <option>Todos</option>
+            <option>Ativos</option>
+            <option>Inativos</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Lista de clientes (exemplos estáticos) -->
+      <ul class="list clientes-list">
+        <li>
+          <div class="list-row">
+            <div>
+              <strong>João Silva</strong>
+              <div class="muted">CPF: 000.000.000-00 · joao@exemplo.com</div>
+            </div>
+            <div class="list-actions">
+              <a class="link" href="cliente.html?id=1">Abrir</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-row">
+            <div>
+              <strong>Maria Souza</strong>
+              <div class="muted">CNPJ: 00.000.000/0001-00 · maria@exemplo.com</div>
+            </div>
+            <div class="list-actions">
+              <a class="link" href="cliente.html?id=2">Abrir</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <footer class="erpbp-footer">© 2025 ERP-BP</footer>
+</body>
+</html>
