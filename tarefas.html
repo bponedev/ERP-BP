@@ -1,0 +1,56 @@
+<!-- tarefas.html
+     Página de tarefas / to-dos
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Tarefas</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp">
+  <header class="erpbp-header">
+    <div class="erpbp-header-left"><img src="images/logo.png" alt="ERP-BP" class="erpbp-logo" /><span class="erpbp-appname">ERP-BP</span></div>
+    <div class="erpbp-header-right"><input id="erpbp-search" placeholder="Pesquisar tarefas..." /><button class="erpbp-btn">Sair</button></div>
+  </header>
+
+  <div class="erpbp-layout">
+    <aside class="erpbp-sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li class="active"><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="settings.html">Configurações</a></li>
+      </ul>
+    </aside>
+
+    <main class="erpbp-content">
+      <h1>Tarefas</h1>
+
+      <section class="panel">
+        <h2>Minhas tarefas</h2>
+        <ul class="list tarefas-list">
+          <li><input type="checkbox" /> Preparar petição inicial — prazo 20/11/2025</li>
+          <li><input type="checkbox" /> Enviar contratos para assinatura</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Nova tarefa</h2>
+        <form class="form-inline">
+          <input placeholder="Descrição" type="text" />
+          <input type="date" />
+          <button class="erpbp-btn" type="submit">Criar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer class="erpbp-footer">© 2025 ERP-BP</footer>
+</body>
+</html>
