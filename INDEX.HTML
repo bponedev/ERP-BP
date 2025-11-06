@@ -1,0 +1,84 @@
+<!-- index.html
+     ERP-BP - Dashboard principal
+     Comentários incluídos para facilitar futuras revisões.
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Dashboard</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp">
+  <!-- Cabeçalho -->
+  <header class="erpbp-header">
+    <div class="erpbp-header-left">
+      <!-- logo: substitua images/logo.png pela imagem real -->
+      <img src="images/logo.png" alt="ERP-BP" class="erpbp-logo" />
+      <span class="erpbp-appname">ERP-BP</span>
+    </div>
+    <div class="erpbp-header-right">
+      <input id="erpbp-search" placeholder="Pesquisar..." aria-label="Pesquisar" />
+      <button id="erpbp-logout" class="erpbp-btn">Sair</button>
+    </div>
+  </header>
+
+  <!-- Layout: sidebar + conteúdo -->
+  <div class="erpbp-layout">
+    <!-- Sidebar: navegação principal -->
+    <aside class="erpbp-sidebar" aria-label="Menu Principal">
+      <ul>
+        <li class="active" data-page="dashboard"><a href="index.html">Dashboard</a></li>
+        <li data-page="clientes"><a href="clientes.html">Clientes</a></li>
+        <li data-page="processos"><a href="processos.html">Processos</a></li>
+        <li data-page="financeiro"><a href="financeiro.html">Financeiro</a></li>
+        <li data-page="agenda"><a href="agenda.html">Agenda</a></li>
+        <li data-page="tarefas"><a href="tarefas.html">Tarefas</a></li>
+        <li data-page="settings"><a href="settings.html">Configurações</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="erpbp-content" id="main">
+      <section class="page page-dashboard" aria-labelledby="dashboard-title">
+        <h1 id="dashboard-title">Visão Geral</h1>
+
+        <!-- Cards resumo -->
+        <div class="cards">
+          <article class="card">
+            <h3>Processos</h3>
+            <p class="stat">—</p>
+            <p class="card-desc">Quantidade de processos ativos</p>
+          </article>
+
+          <article class="card">
+            <h3>Clientes</h3>
+            <p class="stat">—</p>
+            <p class="card-desc">Clientes cadastrados</p>
+          </article>
+
+          <article class="card">
+            <h3>Receitas</h3>
+            <p class="stat">—</p>
+            <p class="card-desc">Receita no período</p>
+          </article>
+        </div>
+
+        <!-- Exemplo de painel -->
+        <section class="panel">
+          <h2>Últimas atualizações</h2>
+          <ul class="updates">
+            <li>Atualização de processo — 01/01/2025</li>
+            <li>Novo cliente cadastrado — 02/01/2025</li>
+            <li>Anotação adicionada — 03/01/2025</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer class="erpbp-footer">© 2025 ERP-BP — Sistema Interno</footer>
+</body>
+</html>
