@@ -1,0 +1,62 @@
+<!-- financeiro.html
+     Página financeira (resumos e lançamentos)
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Financeiro</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp">
+  <header class="erpbp-header">
+    <div class="erpbp-header-left">
+      <img src="images/logo.png" alt="ERP-BP" class="erpbp-logo" />
+      <span class="erpbp-appname">ERP-BP</span>
+    </div>
+    <div class="erpbp-header-right">
+      <input id="erpbp-search" placeholder="Pesquisar lançamentos..." aria-label="Pesquisar lançamentos" />
+      <button class="erpbp-btn">Sair</button>
+    </div>
+  </header>
+
+  <div class="erpbp-layout">
+    <aside class="erpbp-sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li class="active"><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="settings.html">Configurações</a></li>
+      </ul>
+    </aside>
+
+    <main class="erpbp-content">
+      <h1>Financeiro</h1>
+
+      <div class="cards">
+        <div class="card"><h3>Saldo</h3><p class="stat">R$ —</p></div>
+        <div class="card"><h3>Recebimentos</h3><p class="stat">R$ —</p></div>
+        <div class="card"><h3>Despesas</h3><p class="stat">R$ —</p></div>
+      </div>
+
+      <section class="panel">
+        <h2>Lançamentos recentes</h2>
+        <table class="table">
+          <thead><tr><th>Data</th><th>Descrição</th><th>Valor</th><th>Tipo</th></tr></thead>
+          <tbody>
+            <tr><td>2025-10-01</td><td>Honorários - Processo 0001</td><td>R$1.500,00</td><td>Receita</td></tr>
+            <tr><td>2025-09-25</td><td>Pagamento fornecedor</td><td>R$200,00</td><td>Despesa</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="erpbp-footer">© 2025 ERP-BP</footer>
+</body>
+</html>
