@@ -1,0 +1,75 @@
+<!-- cliente.html
+     Página de detalhes do cliente + seção de anotações internas (visíveis apenas ao abrir o cliente)
+     Observação: as anotações exigem backend para salvar/recuperar; aqui temos apenas a interface.
+-->
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ERP-BP — Cliente</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="erpbp">
+  <header class="erpbp-header">
+    <div class="erpbp-header-left">
+      <img src="images/logo.png" alt="ERP-BP" class="erpbp-logo" />
+      <span class="erpbp-appname">ERP-BP</span>
+    </div>
+    <div class="erpbp-header-right">
+      <input id="erpbp-search" placeholder="Pesquisar..." aria-label="Pesquisar" />
+      <button class="erpbp-btn">Sair</button>
+    </div>
+  </header>
+
+  <div class="erpbp-layout">
+    <aside class="erpbp-sidebar">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="active"><a href="clientes.html">Clientes</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="settings.html">Configurações</a></li>
+      </ul>
+    </aside>
+
+    <main class="erpbp-content">
+      <h1>Detalhes do Cliente</h1>
+
+      <!-- Card com informações básicas -->
+      <section class="card cliente-card">
+        <h2>João Silva</h2>
+        <p><strong>CPF:</strong> 000.000.000-00</p>
+        <p><strong>Email:</strong> joao@exemplo.com</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo</p>
+      </section>
+
+      <!-- Anotações internas (visíveis somente ao abrir o cliente) -->
+      <section class="erpbp-notes-section" aria-label="Anotações internas">
+        <h3>Anotações Internas</h3>
+
+        <!-- Lista de anotações (será preenchida via JS/backend) -->
+        <ul id="notes-list" class="notes-list">
+          <li>
+            <p>Reunião agendada para 10/11/2025 — preparar documentos.</p>
+            <small class="muted">Criado em 2025-10-10</small>
+          </li>
+        </ul>
+
+        <!-- Formulário para criar nova anotação (funcionalidade posterior via JS/backend) -->
+        <form id="note-form" class="note-form">
+          <label for="note-text" class="sr-only">Nova anotação</label>
+          <textarea id="note-text" placeholder="Escreva uma anotação privada..."></textarea>
+          <button class="erpbp-btn" type="submit">Salvar Anotação</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer class="erpbp-footer">© 2025 ERP-BP</footer>
+</body>
+</html>
